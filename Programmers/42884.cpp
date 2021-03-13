@@ -23,3 +23,5 @@ int solution(vector<vector<int>> routes) {
     answer++;
     return answer;
 }
+
+//https://programmers.co.kr/questions/14636
