@@ -14,7 +14,8 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | N-Queen | https://www.acmicpc.net/problem/9663 | 
-|  |  |  
+| 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |  
+|  |  |
 
 ### 분할 정복
 | 문제 | 링크 
