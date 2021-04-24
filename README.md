@@ -5,7 +5,6 @@
 ### 구현 & 시뮬레이션
 | 문제 | 링크 
 |:--------:|:--------:|
-| 치킨 배달 | https://www.acmicpc.net/problem/15686 |  
 | 뱀 | https://www.acmicpc.net/problem/3190 |
 | 로봇 시뮬레이션 | https://www.acmicpc.net/problem/2174 |
 |  |  |
