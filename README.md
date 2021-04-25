@@ -14,7 +14,9 @@
 |:--------:|:--------:|
 | N-Queen | https://www.acmicpc.net/problem/9663 | 
 | 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |  
-|  |  |
+| 카드 섞기 | https://www.acmicpc.net/problem/21315 |
+| 괄호 추가하기 | https://www.acmicpc.net/problem/16637 |
+|  |  | 
 
 ### 분할 정복
 | 문제 | 링크 
