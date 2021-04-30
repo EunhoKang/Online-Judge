@@ -22,8 +22,8 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | N-Queen | https://www.acmicpc.net/problem/9663 | 
-| 스도쿠 | https://www.acmicpc.net/problem/2580 | 
-|  |  |
+| 가르침 | https://www.acmicpc.net/problem/1062 |
+|  |  | 
 
 ### 분할 정복
 | 문제 | 링크 
