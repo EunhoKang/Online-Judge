@@ -23,6 +23,7 @@
 |:--------:|:--------:|
 | N-Queen | https://www.acmicpc.net/problem/9663 | 
 | 가르침 | https://www.acmicpc.net/problem/1062 |
+| 좋은수열 | https://www.acmicpc.net/problem/2661 | 
 |  |  | 
 
 ### 분할 정복
