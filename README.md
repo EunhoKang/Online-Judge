@@ -25,7 +25,9 @@
 | 가르침 | https://www.acmicpc.net/problem/1062 |
 | 좋은수열 | https://www.acmicpc.net/problem/2661 | 
 | 선발 명단 | https://www.acmicpc.net/problem/3980 | 
-|  |  | 
+| 색종이 붙이기 | https://www.acmicpc.net/problem/17136 | 
+| 비숍 | https://www.acmicpc.net/problem/1799 |
+|  |  |
 
 ### 분할 정복
 | 문제 | 링크 
