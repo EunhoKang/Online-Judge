@@ -32,15 +32,12 @@ ll Calculate(vector<int> pick){
         cp++;
         np++;
     }
-    //cout<<":"<<sum;
     return sum;
 }
 
 void Pick(int cnt, int brcnt, vector<int> pick,int start){
     if(cnt>=brcnt){
-        //for(int i=0;i<pick.size();++i)cout<<pick[i]<<" ";
         res=max(res,Calculate(pick));
-        //cout<<'\n';
         return;
     }
     for(int i=start;i<number.size()-1;++i){
