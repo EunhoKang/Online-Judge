@@ -32,7 +32,9 @@
 ### 분할 정복
 | 문제 | 링크 
 |:--------:|:--------:|
-|  |  | 
+| 트리 | https://www.acmicpc.net/problem/4256 | 
+| 별 찍기-11 | https://www.acmicpc.net/problem/2448 |
+|  |  |
 
 ### 동적계획법
 | 문제 | 링크 
