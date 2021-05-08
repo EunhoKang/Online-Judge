@@ -2,6 +2,9 @@
 
 ## 복습해야할 문제들
 
+* \* ~ : 자주 나오는 유형
+* ~ \* : 틀린 문제 
+
 ### 구현 & 시뮬레이션
 | 문제 | 링크 
 |:--------:|:--------:|
@@ -13,35 +16,36 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |  
-| 카드 섞기 | https://www.acmicpc.net/problem/21315 |
 | 괄호 추가하기 | https://www.acmicpc.net/problem/16637 |
 | 종이조각 | https://www.acmicpc.net/problem/14391 | 
+| 카드 섞기 * | https://www.acmicpc.net/problem/21315 |
 |  |  | 
 
 ### 백트래킹
 | 문제 | 링크 
 |:--------:|:--------:|
-| N-Queen | https://www.acmicpc.net/problem/9663 | 
+| * N-Queen  | https://www.acmicpc.net/problem/9663 | 
 | 가르침 | https://www.acmicpc.net/problem/1062 |
 | 좋은수열 | https://www.acmicpc.net/problem/2661 | 
 | 선발 명단 | https://www.acmicpc.net/problem/3980 | 
-| 색종이 붙이기 | https://www.acmicpc.net/problem/17136 | 
-| 비숍 | https://www.acmicpc.net/problem/1799 |
+| 색종이 붙이기 * | https://www.acmicpc.net/problem/17136 | 
+| 비숍 * | https://www.acmicpc.net/problem/1799 |
 |  |  |
 
 ### 분할 정복
 | 문제 | 링크 
 |:--------:|:--------:|
-| 트리 | https://www.acmicpc.net/problem/4256 | 
-| 별 찍기-11 | https://www.acmicpc.net/problem/2448 |
+| 트리 * | https://www.acmicpc.net/problem/4256 | 
+| 별 찍기-11 * | https://www.acmicpc.net/problem/2448 |
 |  |  |
 
 ### 동적계획법
 | 문제 | 링크 
 |:--------:|:--------:|
+| * LCS | https://www.acmicpc.net/problem/9251 |
 | N으로 표현 | https://programmers.co.kr/learn/courses/30/lessons/42895 |  
-| LCS | https://www.acmicpc.net/problem/9251 |
-| 가장 큰 정사각형 | https://www.acmicpc.net/problem/1915 |
+| 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
+| 줄세우기 * | https://www.acmicpc.net/problem/2631 |
 |  |  |
 
 ### 문자열 & 파싱 
