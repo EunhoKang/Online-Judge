@@ -42,6 +42,7 @@
 | N으로 표현 | https://programmers.co.kr/learn/courses/30/lessons/42895 |  
 | LCS | https://www.acmicpc.net/problem/9251 |
 | 가장 큰 정사각형 | https://www.acmicpc.net/problem/1915 |
+| 줄세우기 | https://www.acmicpc.net/problem/2631 |
 |  |  |
 
 ### 문자열 & 파싱 
