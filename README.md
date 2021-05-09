@@ -15,7 +15,9 @@
 ### 브루트포스
 | 문제 | 링크 
 |:--------:|:--------:|
-| 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |  
+| * 소수 찾기 | https://programmers.co.kr/learn/courses/30/lessons/42839 |
+| * 치킨 배달 | https://www.acmicpc.net/problem/15686 |
+| 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |
 | 괄호 추가하기 | https://www.acmicpc.net/problem/16637 |
 | 종이조각 | https://www.acmicpc.net/problem/14391 | 
 | 카드 섞기 * | https://www.acmicpc.net/problem/21315 |
@@ -25,9 +27,7 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | * N-Queen  | https://www.acmicpc.net/problem/9663 | 
-| 가르침 | https://www.acmicpc.net/problem/1062 |
-| 좋은수열 | https://www.acmicpc.net/problem/2661 | 
-| 선발 명단 | https://www.acmicpc.net/problem/3980 | 
+| * 애너그램 | https://www.acmicpc.net/problem/6443 |
 | 색종이 붙이기 * | https://www.acmicpc.net/problem/17136 | 
 | 비숍 * | https://www.acmicpc.net/problem/1799 |
 |  |  |
@@ -35,7 +35,8 @@
 ### 분할 정복
 | 문제 | 링크 
 |:--------:|:--------:|
-| 트리 * | https://www.acmicpc.net/problem/4256 | 
+| * 쿼드 트리 | https://www.acmicpc.net/problem/1992 |
+| * 트리 \* | https://www.acmicpc.net/problem/4256 | 
 | 별 찍기-11 * | https://www.acmicpc.net/problem/2448 |
 |  |  |
 
@@ -43,7 +44,8 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | * LCS | https://www.acmicpc.net/problem/9251 |
-| N으로 표현 | https://programmers.co.kr/learn/courses/30/lessons/42895 |  
+| * 평범한 배낭 | https://www.acmicpc.net/problem/12865 |
+| * 정수 삼각형 | https://programmers.co.kr/learn/courses/30/lessons/43105 |
 | 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
 | 줄세우기 * | https://www.acmicpc.net/problem/2631 |
 |  |  |
@@ -140,7 +142,7 @@
 ### 슬라이딩 윈도
 | 문제 | 링크 
 |:--------:|:--------:|
-| 도둑질 | https://programmers.co.kr/learn/courses/30/lessons/42897 |
+| * 도둑질 | https://programmers.co.kr/learn/courses/30/lessons/42897 |
 |  |  |  
 
 ### 비트마스킹
