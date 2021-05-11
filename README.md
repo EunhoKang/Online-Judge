@@ -48,7 +48,8 @@
 | * 정수 삼각형 | https://programmers.co.kr/learn/courses/30/lessons/43105 |
 | 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
 | 줄세우기 * | https://www.acmicpc.net/problem/2631 |
-| 진우의 달 여행 (Large) * | https://www.acmicpc.net/problem/17485 |
+| 수도배관공사 * | https://www.acmicpc.net/problem/2073 |
+|  |  |
 
 ### 문자열 & 파싱 
 | 문제 | 링크 
