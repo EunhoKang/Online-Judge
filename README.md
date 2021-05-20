@@ -59,8 +59,10 @@
 
 ### 문자열 & 파싱 
 | 문제 | 링크 
-|:--------:|:--------:|
-| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 |
+|:--------:|:--------:| 
+| * 부분 문자열 | https://www.acmicpc.net/problem/16916 |
+| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 | 
+|  |  |
 
 ### 스택, 큐, 데크 
 | 문제 | 링크 
