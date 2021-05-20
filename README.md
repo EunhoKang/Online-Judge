@@ -45,19 +45,22 @@
 |:--------:|:--------:|
 | * 평범한 배낭 | https://www.acmicpc.net/problem/12865 |
 | * 정수 삼각형 | https://programmers.co.kr/learn/courses/30/lessons/43105 |
+| * 내리막길 | https://www.acmicpc.net/problem/1520 |
 | * LCS | https://www.acmicpc.net/problem/9251 |
 | * 로또 \* | https://www.acmicpc.net/problem/2758 |
-| * 행렬 곱셈 순서 \* | https://www.acmicpc.net/problem/11049 |
+| * ACM Craft | https://www.acmicpc.net/problem/1005 |
 | * 받아쓰기 \* | https://www.acmicpc.net/problem/20542 |
+| 행렬 곱셈 순서 * | https://www.acmicpc.net/problem/11049 |
 | 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
 | 줄세우기 * | https://www.acmicpc.net/problem/2631 |
 | 수도배관공사 * | https://www.acmicpc.net/problem/2073 |
-|  |  |
+| 꿈틀꿈틀 호석 애벌레 * | https://www.acmicpc.net/problem/20181 |
+| 성냥개비 * | https://www.acmicpc.net/problem/3687 |
 
 ### 문자열 & 파싱 
 | 문제 | 링크 
 |:--------:|:--------:|
-|  |  |  
+| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 |
 
 ### 스택, 큐, 데크 
 | 문제 | 링크 
