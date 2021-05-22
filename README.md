@@ -10,6 +10,8 @@
 |:--------:|:--------:|
 | 뱀 | https://www.acmicpc.net/problem/3190 |
 | 로봇 시뮬레이션 | https://www.acmicpc.net/problem/2174 |
+| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 | 
+| 파일 탐색기 * | https://www.acmicpc.net/problem/20210 |
 |  |  |
 
 ### 브루트포스
@@ -57,10 +59,10 @@
 | 꿈틀꿈틀 호석 애벌레 * | https://www.acmicpc.net/problem/20181 |
 | 성냥개비 * | https://www.acmicpc.net/problem/3687 |
 
-### 문자열 & 파싱 
+### 문자열
 | 문제 | 링크 
-|:--------:|:--------:|
-| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 |
+|:--------:|:--------:| 
+| * 부분 문자열 | https://www.acmicpc.net/problem/16916 |
 
 ### 스택, 큐, 데크 
 | 문제 | 링크 
