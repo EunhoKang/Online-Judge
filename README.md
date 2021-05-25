@@ -62,12 +62,7 @@
 ### 문자열
 | 문제 | 링크 
 |:--------:|:--------:| 
-| * 부분 문자열 | https://www.acmicpc.net/problem/16916 |
-<<<<<<< HEAD
-=======
-| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 | 
-|  |  |
->>>>>>> accae877bc71e0bae66aec3388da8393f1972d10
+| * 부분 문자열 \* | https://www.acmicpc.net/problem/16916 |
 
 ### 스택, 큐, 데크 
 | 문제 | 링크 
