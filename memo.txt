@@ -74,6 +74,43 @@
 대표 유형 2) 전위/중위/후위 표기식
 
 
+#트리
+정의 :
+1)노드가 0개이거나
+2)노드가 1개 이상이고 방향 간선이 존재할 경우
+2-1)들어오는 간선이 하나도 없는 단 하나의 노드가 존재하고(루트 노드)
+2-2)루트 노드를 제외한 모든 노드는 반드시 단 하나의 들어오는 간선이 존재하며
+2-3)루트에서 다른 노드로 가는 경로는 반드시 존재하며, 유일하다. 
+이는 루트를 제외한 모든 노드에 성립해야 한다.
+
+
+1.이진 탐색 트리
+
+2.구간 트리 (세그먼트 트리)
+
+3.상호 배타적 트리 (분리 집합 ,union-find)
+집합 표현시 사용. 배열 하나 두고 해당 원소가 속한 원소의 집합의 대표 원소를 반환하는 배열 parent를 둬 해당 원소가 어디에 속하는지를 확인.
+집합 표현할 때 쓰로 주로 최소 스패닝 트리 다룰 때 쓴다.
+struct NaiveDisjointSet { 
+    vector<int> parent; 
+    NaiveDisjointSet(int n): parent(n) { 
+        for (int i=0; i < n; i++) parent[i]=i; 
+    } 
+    int find (int u) { 
+        if (u == parent[u]) return u;  
+        return parent[u]=find(parent[u]); 
+    } 
+    bool merge (int u, int v){
+        u = find(u); v = find(v); 
+        if (u == v) return false; 
+        parent[u] = v; 
+        return true;
+    } 
+};
+
+4.트라이
+
+
 #기본 자료구조
 1.해시
 문자-숫자 짝으로 자료를 저장해야 할 때 사용
@@ -111,34 +148,6 @@ for (it = m.begin(); it != m.end(); it++) {
 6.정렬
 sort 함수를 사용하면 된다.
 펑터를 이용해 정렬 규칙을 바꿔 원하는 정렬 형태를 만들 수 있다.
-
-
-#트리
-1.이진 탐색 트리
-
-2.구간 트리 (세그먼트 트리)
-
-3.상호 배타적 트리 (분리 집합 ,union-find)
-집합 표현시 사용. 배열 하나 두고 해당 원소가 속한 원소의 집합의 대표 원소를 반환하는 배열 parent를 둬 해당 원소가 어디에 속하는지를 확인.
-집합 표현할 때 쓰로 주로 최소 스패닝 트리 다룰 때 쓴다.
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i < n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-
-4.트라이
 
 
 
