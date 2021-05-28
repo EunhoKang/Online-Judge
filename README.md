@@ -200,3 +200,9 @@
 |:--------:|:--------:|
 | H-Index | https://programmers.co.kr/learn/courses/30/lessons/42747 | 
 |  |  | 
+
+###기타 잡기술
+| 문제 | 링크 
+|:--------:|:--------:|
+| 나무 위의 빗물 | https://www.acmicpc.net/problem/17073 | 
+|  |  | 
