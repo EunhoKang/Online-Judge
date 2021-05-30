@@ -69,8 +69,7 @@
 |:--------:|:--------:|
 | * 큰 수 만들기 | https://programmers.co.kr/learn/courses/30/lessons/42883 |
 | * 괄호 제거 | https://www.acmicpc.net/problem/2800 |
-| * 후위 표기식 | https://www.acmicpc.net/problem/1918 |
-| * 다리를 지나는 트럭 | https://programmers.co.kr/learn/courses/30/lessons/42583 |  
+| * 후위 표기식 | https://www.acmicpc.net/problem/1918 | 
 | AC | https://www.acmicpc.net/problem/5430 |
 |  |  | 
 
