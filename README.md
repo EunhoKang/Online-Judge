@@ -38,7 +38,7 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | * 쿼드 트리 | https://www.acmicpc.net/problem/1992 |
-| * 트리 \* | https://www.acmicpc.net/problem/4256 | 
+| * 트리 | https://www.acmicpc.net/problem/4256 | 
 | 별 찍기-11 * | https://www.acmicpc.net/problem/2448 |
 |  |  |
 
@@ -77,6 +77,9 @@
 ### 트리
 | 문제 | 링크 
 |:--------:|:--------:|
+| * 트리 | https://www.acmicpc.net/problem/4256 |
+| * 가장 가까운 공동 조상 | https://www.acmicpc.net/problem/3584 |
+| * 트리의 지름 | https://www.acmicpc.net/problem/1967 |
 | 트리인가? * | https://www.acmicpc.net/problem/6416 |  
 |  |  |
 
