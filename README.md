@@ -89,18 +89,14 @@
 
 ### 해시, 맵 ,힙
 | 문제 | 링크 
-|:--------:|:--------:|
-| 전화번호 목록 | https://programmers.co.kr/learn/courses/30/lessons/42577 |  
-| 위장 | https://programmers.co.kr/learn/courses/30/lessons/42578 |  
-| 디스크 컨트롤러 | https://programmers.co.kr/learn/courses/30/lessons/42627 |  
-| 이중우선순위큐 | https://programmers.co.kr/learn/courses/30/lessons/42628 |  
-| 방의 개수 | https://programmers.co.kr/learn/courses/30/lessons/49190 |
-| 최대공약수 | https://www.acmicpc.net/problem/2824 |  
+|:--------:|:--------:| 
+| * 이중우선순위큐 | https://programmers.co.kr/learn/courses/30/lessons/42628 |  
 |  |  | 
 
 ### 그래프
 | 문제 | 링크 
 |:--------:|:--------:|
+| 방의 개수 * | https://programmers.co.kr/learn/courses/30/lessons/49190 |
 |  |  | 
 
 ### DFS
