@@ -95,8 +95,7 @@
 |:--------:|:--------:|
 | * 네트워크 | https://programmers.co.kr/learn/courses/30/lessons/43162 |
 | * 단어 변환 | https://programmers.co.kr/learn/courses/30/lessons/43163 | 
-| 말이 되고픈 원숭이 | https://www.acmicpc.net/problem/1600 |
-| 공주님을 구해라! * | https://www.acmicpc.net/problem/17836 | 
+| 말이 되고픈 원숭이 | https://www.acmicpc.net/problem/1600 | 
 |  |  | 
 
 ### 최단거리
