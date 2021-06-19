@@ -5,6 +5,23 @@
 * \* ~ : 자주 나오는 유형
 * ~ \* : 틀린 문제 
 
+### 수학
+| 문제 | 링크 
+|:--------:|:--------:|
+| 최대공약수 | https://www.acmicpc.net/problem/2824 |  
+|  |  | 
+
+### 정렬
+| 문제 | 링크 
+|:--------:|:--------:|
+| H-Index | https://programmers.co.kr/learn/courses/30/lessons/42747 | 
+|  |  | 
+
+### 비트마스킹
+| 문제 | 링크 
+|:--------:|:--------:|
+|  |  | 
+
 ### 구현 & 시뮬레이션
 | 문제 | 링크 
 |:--------:|:--------:|
@@ -61,6 +78,11 @@
 | 꿈틀꿈틀 호석 애벌레 * | https://www.acmicpc.net/problem/20181 |
 | 성냥개비 * | https://www.acmicpc.net/problem/3687 |
 
+### 슬라이딩 윈도
+| 문제 | 링크 
+|:--------:|:--------:|
+|  |  |  
+
 ### 문자열
 | 문제 | 링크 
 |:--------:|:--------:| 
@@ -104,42 +126,26 @@
 | 순위 | https://programmers.co.kr/learn/courses/30/lessons/49191 | 
 |  |  | 
 
-### 수학
-| 문제 | 링크 
-|:--------:|:--------:|
-| 최대공약수 | https://www.acmicpc.net/problem/2824 |  
-|  |  | 
-
 ### 그리디
 | 문제 | 링크 
 |:--------:|:--------:|
 | 카드 정렬하기 | https://www.acmicpc.net/problem/1715 |  
 |  |  | 
 
-### 이분 탐색
+### 이분 탐색 & 최대값 결정 문제로 변환
 | 문제 | 링크 
 |:--------:|:--------:|
-| 입국심사 | https://programmers.co.kr/learn/courses/30/lessons/43238 |
-| 징검다리 | https://programmers.co.kr/learn/courses/30/lessons/43236 |   
-| 피자 굽기 | https://www.acmicpc.net/problem/1756 | 
+| * 피자 굽기 | https://www.acmicpc.net/problem/1756 | 
+| * 입국심사 | https://programmers.co.kr/learn/courses/30/lessons/43238 |
+| * 징검다리 | https://programmers.co.kr/learn/courses/30/lessons/43236 |   
 |  |  | 
-
-### 이진검색트리
-| 문제 | 링크 
-|:--------:|:--------:|
-|  |  |  
 
 ### 투포인터 
 | 문제 | 링크 
 |:--------:|:--------:|
 |  |  |  
 
-### 슬라이딩 윈도
-| 문제 | 링크 
-|:--------:|:--------:|
-|  |  |  
-
-### 비트마스킹
+### 이진검색트리
 | 문제 | 링크 
 |:--------:|:--------:|
 |  |  |  
@@ -180,12 +186,6 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 |  |  |  
-
-### 정렬
-| 문제 | 링크 
-|:--------:|:--------:|
-| H-Index | https://programmers.co.kr/learn/courses/30/lessons/42747 | 
-|  |  | 
 
 ### 기타 잡기술
 | 문제 | 링크 
