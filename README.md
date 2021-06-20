@@ -74,7 +74,7 @@
 | 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
 | 줄세우기 * | https://www.acmicpc.net/problem/2631 |
 | 수도배관공사 * | https://www.acmicpc.net/problem/2073 |
-| 로또 \* | https://www.acmicpc.net/problem/2758 |
+| 로또 * | https://www.acmicpc.net/problem/2758 |
 | 꿈틀꿈틀 호석 애벌레 * | https://www.acmicpc.net/problem/20181 |
 | 성냥개비 * | https://www.acmicpc.net/problem/3687 |
 
@@ -117,8 +117,10 @@
 |:--------:|:--------:|
 | * 네트워크 | https://programmers.co.kr/learn/courses/30/lessons/43162 |
 | * 단어 변환 | https://programmers.co.kr/learn/courses/30/lessons/43163 | 
-| 말이 되고픈 원숭이 | https://www.acmicpc.net/problem/1600 | 
-| 샘터 | https://www.acmicpc.net/problem/18513 | 
+| * 텀 프로젝트 | https://www.acmicpc.net/problem/9466 |
+| * 모양 만들기 \* | https://www.acmicpc.net/problem/16932 |
+| * 말이 되고픈 원숭이 \* | https://www.acmicpc.net/problem/1600 | 
+| * 샘터 \* | https://www.acmicpc.net/problem/18513 | 
 
 ### 최단거리
 | 문제 | 링크 
