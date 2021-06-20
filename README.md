@@ -102,7 +102,7 @@
 |:--------:|:--------:|
 | * 트리 | https://www.acmicpc.net/problem/4256 |
 | * 가장 가까운 공동 조상 | https://www.acmicpc.net/problem/3584 |
-| * 트리의 지름 | https://www.acmicpc.net/problem/1967 |
+| * 트리의 지름 \* | https://www.acmicpc.net/problem/1967 |
 | 트리인가? * | https://www.acmicpc.net/problem/6416 |  
 |  |  |
 
@@ -117,7 +117,7 @@
 |:--------:|:--------:|
 | * 네트워크 | https://programmers.co.kr/learn/courses/30/lessons/43162 |
 | * 단어 변환 | https://programmers.co.kr/learn/courses/30/lessons/43163 | 
-| * 텀 프로젝트 | https://www.acmicpc.net/problem/9466 |
+| * 텀 프로젝트 \* | https://www.acmicpc.net/problem/9466 |
 | * 모양 만들기 \* | https://www.acmicpc.net/problem/16932 |
 | * 말이 되고픈 원숭이 \* | https://www.acmicpc.net/problem/1600 | 
 | * 샘터 \* | https://www.acmicpc.net/problem/18513 | 
