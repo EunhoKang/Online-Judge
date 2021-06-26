@@ -125,7 +125,7 @@
 ### 최단거리
 | 문제 | 링크 
 |:--------:|:--------:|
-| 순위 | https://programmers.co.kr/learn/courses/30/lessons/49191 | 
+| * 순위 | https://programmers.co.kr/learn/courses/30/lessons/49191 | 
 |  |  | 
 
 ### 그리디
