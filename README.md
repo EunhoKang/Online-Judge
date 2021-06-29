@@ -129,6 +129,7 @@
 | * 플로이드 | https://www.acmicpc.net/problem/11404 |
 | * 순위 | https://programmers.co.kr/learn/courses/30/lessons/49191 | 
 | * 타임머신 | https://www.acmicpc.net/problem/11657 | 
+| * 웜홀 | https://www.acmicpc.net/problem/1865 |
 
 ### 그리디
 | 문제 | 링크 
