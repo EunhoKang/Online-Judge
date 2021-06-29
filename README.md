@@ -125,8 +125,10 @@
 ### 최단거리
 | 문제 | 링크 
 |:--------:|:--------:|
+| * 발전소 설치 | https://www.acmicpc.net/problem/1277 |
+| * 플로이드 | https://www.acmicpc.net/problem/11404 |
 | * 순위 | https://programmers.co.kr/learn/courses/30/lessons/49191 | 
-|  |  | 
+| * 타임머신 | https://www.acmicpc.net/problem/11657 | 
 
 ### 그리디
 | 문제 | 링크 
