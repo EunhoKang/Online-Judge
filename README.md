@@ -22,16 +22,6 @@
 |:--------:|:--------:|
 |  |  | 
 
-### 구현 & 시뮬레이션
-| 문제 | 링크 
-|:--------:|:--------:|
-| 방의 개수 * | https://programmers.co.kr/learn/courses/30/lessons/49190 |
-| 뱀 | https://www.acmicpc.net/problem/3190 |
-| 로봇 시뮬레이션 | https://www.acmicpc.net/problem/2174 |
-| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 | 
-| 파일 탐색기 * | https://www.acmicpc.net/problem/20210 |
-|  |  |
-
 ### 브루트포스
 | 문제 | 링크 
 |:--------:|:--------:|
@@ -77,11 +67,6 @@
 | 로또 * | https://www.acmicpc.net/problem/2758 |
 | 꿈틀꿈틀 호석 애벌레 * | https://www.acmicpc.net/problem/20181 |
 | 성냥개비 * | https://www.acmicpc.net/problem/3687 |
-
-### 슬라이딩 윈도
-| 문제 | 링크 
-|:--------:|:--------:|
-|  |  |  
 
 ### 문자열
 | 문제 | 링크 
@@ -156,6 +141,11 @@
 |:--------:|:--------:|
 |  |  |  
 
+### 슬라이딩 윈도
+| 문제 | 링크 
+|:--------:|:--------:|
+|  |  |  
+
 ### 이진검색트리
 | 문제 | 링크 
 |:--------:|:--------:|
@@ -187,7 +177,7 @@
 |:--------:|:--------:|
 |  |  |   
 
-### 분리 집합, 최소 스패닝 트리
+### 유니온-파인드, 최소 스패닝 트리
 | 문제 | 링크 
 |:--------:|:--------:|
 | 섬 연결하기 | https://programmers.co.kr/learn/courses/30/lessons/42861 |  
@@ -203,9 +193,12 @@
 |:--------:|:--------:|
 |  |  |  
 
-### 기타 잡기술
+### 구현 & 시뮬레이션
 | 문제 | 링크 
 |:--------:|:--------:|
-| 나무 위의 빗물 | https://www.acmicpc.net/problem/17073 |
-| 생태학 | https://www.acmicpc.net/problem/4358 |  
-|  |  | 
+| 방의 개수 * | https://programmers.co.kr/learn/courses/30/lessons/49190 |
+| 뱀 | https://www.acmicpc.net/problem/3190 |
+| 로봇 시뮬레이션 | https://www.acmicpc.net/problem/2174 |
+| 문자열 압축 | https://programmers.co.kr/learn/courses/30/lessons/60057 | 
+| 파일 탐색기 * | https://www.acmicpc.net/problem/20210 |
+|  |  |
