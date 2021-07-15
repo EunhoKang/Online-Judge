@@ -8,7 +8,7 @@
 ### 배열, 연결 리스트
 | 문제 | 링크 
 |:--------:|:--------:| 
-| * 에디터 | https://www.acmicpc.net/problem/1406 |
+| * 에디터 \*| https://www.acmicpc.net/problem/1406 |
 |  |  |
 
 ### 수학
