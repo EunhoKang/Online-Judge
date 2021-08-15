@@ -8,7 +8,7 @@
 ### 배열, 연결 리스트
 | 문제 | 링크 
 |:--------:|:--------:| 
-| * 에디터 \*| https://www.acmicpc.net/problem/1406 |
+| * 에디터 | https://www.acmicpc.net/problem/1406 |
 |  |  |
 
 ### 수학
@@ -36,7 +36,7 @@
 | 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |
 | 괄호 추가하기 | https://www.acmicpc.net/problem/16637 |
 | 종이조각 | https://www.acmicpc.net/problem/14391 | 
-| 카드 섞기 * | https://www.acmicpc.net/problem/21315 |
+| 카드 섞기 | https://www.acmicpc.net/problem/21315 |
 |  |  | 
 
 ### 백트래킹
