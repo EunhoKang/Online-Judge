@@ -11,16 +11,10 @@
 | *1 에디터 | https://www.acmicpc.net/problem/1406 |
 |  |  |
 
-### 수학
-| 문제 | 링크 
-|:--------:|:--------:|
-| 최대공약수 | https://www.acmicpc.net/problem/2824 |  
-|  |  | 
-
 ### 정렬
 | 문제 | 링크 
 |:--------:|:--------:|
-| H-Index | https://programmers.co.kr/learn/courses/30/lessons/42747 | 
+| *1 H-Index | https://programmers.co.kr/learn/courses/30/lessons/42747 | 
 |  |  | 
 
 ### 비트마스킹
@@ -181,7 +175,12 @@
 | 카드 정렬하기 | https://www.acmicpc.net/problem/1715 |  
 | 연산 최대로 * | https://www.acmicpc.net/problem/21943 | 
 
-### 이분 탐색 & 최대값 결정 문제로 변환
+### 투포인터 
+| 문제 | 링크 
+|:--------:|:--------:|
+|  |  |
+
+### 이분 탐색 & 최소최대 결정 문제로 변환
 | 문제 | 링크 
 |:--------:|:--------:|
 | * 피자 굽기 | https://www.acmicpc.net/problem/1756 | 
@@ -194,10 +193,11 @@
 |:--------:|:--------:|
 |  |  |  
 
-### 투포인터 
+### 정수
 | 문제 | 링크 
 |:--------:|:--------:|
-|  |  |   
+| 최대공약수 | https://www.acmicpc.net/problem/2824 |  
+|  |  | 
 
 ### 기하 
 | 문제 | 링크 
