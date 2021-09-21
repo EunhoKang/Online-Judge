@@ -35,10 +35,10 @@
 ### 백트래킹
 | 문제 | 링크 
 |:--------:|:--------:|
-| * N-Queen  | https://www.acmicpc.net/problem/9663 | 
-| * 애너그램 | https://www.acmicpc.net/problem/6443 |
-| 색종이 붙이기 * | https://www.acmicpc.net/problem/17136 | 
-| 비숍 * | https://www.acmicpc.net/problem/1799 |
+| *1 N-Queen  | https://www.acmicpc.net/problem/9663 | 
+| *1 비숍  | https://www.acmicpc.net/problem/1799 |
+| *2 애너그램 | https://www.acmicpc.net/problem/6443 |
+| *2 색종이 붙이기 | https://www.acmicpc.net/problem/17136 | 
 |  |  |
 
 ### 분할 정복
