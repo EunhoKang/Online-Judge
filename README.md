@@ -44,9 +44,9 @@
 ### 분할 정복
 | 문제 | 링크 
 |:--------:|:--------:|
-| * 쿼드 트리 | https://www.acmicpc.net/problem/1992 |
-| * 트리 | https://www.acmicpc.net/problem/4256 | 
-| 별 찍기-11 * | https://www.acmicpc.net/problem/2448 |
+| *1 쿼드 트리 | https://www.acmicpc.net/problem/1992 |
+| *1 별 찍기-11 | https://www.acmicpc.net/problem/2448 |
+| *2 버블 소트 \* | https://www.acmicpc.net/problem/1517 |
 |  |  |
 
 ### 동적계획법
