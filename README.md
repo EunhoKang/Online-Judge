@@ -86,7 +86,7 @@
 | AC | https://www.acmicpc.net/problem/5430 |
 | 이중우선순위큐 | https://programmers.co.kr/learn/courses/30/lessons/42628 |
 | 에디터 | https://www.acmicpc.net/problem/1406 | 
-|  |  | 
+| 이차원 배열과 연산 * | https://www.acmicpc.net/problem/17140 | 
 
 ### 트리
 | 문제 | 링크 
