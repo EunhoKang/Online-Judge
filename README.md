@@ -115,7 +115,7 @@
 ### 유니온-파인드/최소 스패닝 트리
 | 문제 | 링크 
 |:--------:|:--------:|
-| *2 섬 연결하기 | https://programmers.co.kr/learn/courses/30/lessons/42861 |  
+| 섬 연결하기 | https://programmers.co.kr/learn/courses/30/lessons/42861 |  
 |  |  | 
 
 ### 그래프 탐색
