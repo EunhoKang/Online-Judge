@@ -22,7 +22,7 @@
 | 소수 찾기 | https://programmers.co.kr/learn/courses/30/lessons/42839 |
 | 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |
 | 괄호 추가하기 | https://www.acmicpc.net/problem/16637 |
-| 링크와 스타트 * | https://www.acmicpc.net/problem/15661 | 
+| 링크와 스타트 | https://www.acmicpc.net/problem/15661 | 
 
 ### 백트래킹
 | 문제 | 링크 
@@ -38,7 +38,7 @@
 |:--------:|:--------:|
 | 쿼드 트리 | https://www.acmicpc.net/problem/1992 |
 | 별 찍기-11 | https://www.acmicpc.net/problem/2448 |
-| 버블 소트 \* | https://www.acmicpc.net/problem/1517 |
+| 버블 소트 | https://www.acmicpc.net/problem/1517 |
 |  |  |
 
 ### 동적계획법
@@ -50,7 +50,7 @@
 | LCS | https://www.acmicpc.net/problem/9251 |
 | ACM Craft | https://www.acmicpc.net/problem/1005 |
 | 도둑질 | https://programmers.co.kr/learn/courses/30/lessons/42897 |
-| 받아쓰기 \* | https://www.acmicpc.net/problem/20542 |
+| 받아쓰기 | https://www.acmicpc.net/problem/20542 |
 | 행렬 곱셈 순서 * | https://www.acmicpc.net/problem/11049 |
 | 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
 | 줄세우기 * | https://www.acmicpc.net/problem/2631 |
