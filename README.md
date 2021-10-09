@@ -22,7 +22,7 @@
 | 소수 찾기 | https://programmers.co.kr/learn/courses/30/lessons/42839 |
 | 제곱수 찾기 | https://www.acmicpc.net/problem/1025 |
 | 괄호 추가하기 | https://www.acmicpc.net/problem/16637 |
-|  |  | 
+| 링크와 스타트 * | https://www.acmicpc.net/problem/15661 | 
 
 ### 백트래킹
 | 문제 | 링크 
@@ -147,7 +147,7 @@
 ### 정수
 | 문제 | 링크 
 |:--------:|:--------:|
-| 최대공약수 | https://www.acmicpc.net/problem/2824 |  
+| 최대공약수 * | https://www.acmicpc.net/problem/2824 |  
 |  |  | 
 
 ### 기하 
