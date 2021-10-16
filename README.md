@@ -45,16 +45,15 @@
 | 문제 | 링크 
 |:--------:|:--------:|
 | 평범한 배낭 | https://www.acmicpc.net/problem/12865 |
-| 내리막길 | https://www.acmicpc.net/problem/1520 |
 | 정수 삼각형 | https://programmers.co.kr/learn/courses/30/lessons/43105 |
 | LCS | https://www.acmicpc.net/problem/9251 |
 | ACM Craft | https://www.acmicpc.net/problem/1005 |
 | 도둑질 | https://programmers.co.kr/learn/courses/30/lessons/42897 |
 | 받아쓰기 | https://www.acmicpc.net/problem/20542 |
-| 행렬 곱셈 순서 * | https://www.acmicpc.net/problem/11049 |
-| 가장 큰 정사각형 * | https://www.acmicpc.net/problem/1915 |
-| 줄세우기 * | https://www.acmicpc.net/problem/2631 |
-| 수도배관공사 * | https://www.acmicpc.net/problem/2073 |
+| 행렬 곱셈 순서 | https://www.acmicpc.net/problem/11049 |
+| 가장 큰 정사각형 | https://www.acmicpc.net/problem/1915 |
+| 줄세우기 | https://www.acmicpc.net/problem/2631 |
+| 수도배관공사 | https://www.acmicpc.net/problem/2073 |
 | 로또 * | https://www.acmicpc.net/problem/2758 |
 | 꿈틀꿈틀 호석 애벌레 * | https://www.acmicpc.net/problem/20181 |
 | 성냥개비 * | https://www.acmicpc.net/problem/3687 |
