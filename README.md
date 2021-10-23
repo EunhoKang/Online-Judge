@@ -83,6 +83,7 @@
 | 괄호 제거 | https://www.acmicpc.net/problem/2800 |
 | 후위 표기식 | https://www.acmicpc.net/problem/1918 | 
 | AC | https://www.acmicpc.net/problem/5430 |
+| 카드 놓기 | https://www.acmicpc.net/problem/18115 |
 | 이중우선순위큐 | https://programmers.co.kr/learn/courses/30/lessons/42628 |
 | 에디터 | https://www.acmicpc.net/problem/1406 | 
 | 이차원 배열과 연산 * | https://www.acmicpc.net/problem/17140 | 
