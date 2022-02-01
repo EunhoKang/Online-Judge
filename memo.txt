@@ -103,7 +103,8 @@ string c;
 cin>>c;cout<<c;
 
 -공백 포함하여 받기
-int a,temp;
+int a;
+string temp;
 cin>>a;
 cin.ignore();//버퍼 비워서 이상한 값이 안 들어가도록 하기
 getline(cin,temp);
