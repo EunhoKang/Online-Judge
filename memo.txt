@@ -90,7 +90,12 @@ printf("%.9f",a/b);//소수점 9자리까지 표기, 기본은 6자리
 char * c[100];
 while (scanf("%[^\n]s", c) != EOF){...}
 또는
+char c[100];
 while (fgets(c, 100, stdin)){...}
+또는
+while (cin >> s >> t){
+    ...
+}
 
 *cin/cout
 
