@@ -145,6 +145,10 @@ while(getline(cin,tree)){}
 표준 템플릿 라이브러리.
 컨테이너(Container, 자료구조) Class / 반복자 / 알고리즘간의 협력에 기반한 템플릿 라이브러리이다.
 
+-regex
+regex_replace : string str1 = regex_replace("aaa-bba-ccd-daf", regex("a"), "z");
+문자열 내 모든 문자 치환.
+
 https://boycoding.tistory.com/124
 
 

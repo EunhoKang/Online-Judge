@@ -5,6 +5,8 @@
         "vector": "cpp",
         "xiosbase": "cpp",
         "utility": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "xstring": "cpp",
+        "chrono": "cpp"
     }
 }
