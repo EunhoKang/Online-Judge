@@ -3,45 +3,15 @@
 using namespace std;
 int INF=987654321;
 
-int n;
-int A[1001];
-int cache[1001][2];
-
-int LBS(int index, int istop){
-    if(index==n)return 0;
-    int & res=cache[index][istop];
-    if(res!=-1)return res;
-    res=0;
-    for(int i=index+1;i<=n;++i){
-        if(istop==1){
-            if(A[index]>A[i]){
-                res=max(res,1+LBS(i,1));
-            }
-        }else{
-            if(A[index]<A[i]){
-                res=max(res,max(1+LBS(i,0),1+LBS(i,1)));
-            }
-        }
-    }
-    return res;
-}
-
 
 int main() {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    cin>>n;
-    memset(cache,-1,sizeof(cache));
-    for(int i=1;i<=n;++i){
-        cin>>A[i];
-    }
-    cout<<LBS(0,0);
+    
     return 0;
 }
 /*
-1. 긴 수열에서 특정 수를 선택해나간다고 하자.
-해당 선택 순서에서 수열이 이미 증가에서 감소로 돌아섰는지 여부를 알고 있다면,
-이전에 어떤 선택을 했는지와 앞으로 가장 긴 수열을 얻기 위해 어떤 선택을 해야하는지는
-관계성을 갖지 못하며, 특정 위치에서 같은 선택을 해야 하는 경우가 많이 발생한다.
--> DP
-2.첫 시작 선택을 위해 -1번쨰 인덱스를 만들자.
+1. 최단거리의 손님을 찾는다. 손님이 남아있지 않다면 성공, 손님이 남아있으나 찾을 수 없다면 실패.
+2. 최단거리의 손님을 목적지까지 최단 거리로 운송한다. 목적지로 갈수 없거나 연료보다 이동거리가 크면 실패.
+3. 2번 과정에서 이동한 거리의 두배만큼 연료가 찬다. 1번으로 돌아간다.
+4. 
 */
