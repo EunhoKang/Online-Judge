@@ -128,7 +128,6 @@
 | 모양 만들기 \* | https://www.acmicpc.net/problem/16932 |
 | 말이 되고픈 원숭이 \* | https://www.acmicpc.net/problem/1600 | 
 | 샘터 \* | https://www.acmicpc.net/problem/18513 | 
-| 스타트 택시 \* | https://www.acmicpc.net/problem/19238 |
 
 ### 최단거리
 | 문제 | 링크 
