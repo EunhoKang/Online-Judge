@@ -4,66 +4,71 @@ using namespace std;
 int INF=987654321;
 
 int n,m;
-int graph[100][100];
-int before[100][100];
+int problemnum[100000];
+int problemlevel[100000];
+
+vector<string> split(string str,char del){
+    vector<string> res;
+    string s;
+    stringstream ss(str);
+    while(getline(ss,s,del)){
+        res.push_back(s);
+    }
+    return res;
+}
 
 int main() {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    cin>>n>>m;
-    for(int i=0;i<n;++i)fill(graph[i],graph[i]+100,INF);
+    cin>>n;
+    priority_queue<pair<int,int>> pq_big;
+    priority_queue<pair<int,int>> pq_small;
+    priority_queue<pair<int,int>> pq_bigpop;
+    priority_queue<pair<int,int>> pq_smallpop;
+    map<int,int> dic;
+    for(int i=0;i<n;++i){
+        cin>>problemnum[i]>>problemlevel[i];
+        pq_big.push({problemlevel[i],problemnum[i]});
+        pq_small.push({-problemlevel[i],-problemnum[i]});
+        dic[problemnum[i]]=problemlevel[i];
+    }
+    cin>>m;
+    cin.ignore();
     for(int i=0;i<m;++i){
-        int a,b,c;
-        cin>>a>>b>>c;
-        graph[a-1][b-1]=min(graph[a-1][b-1],c);
-    }
-    for(int i=0;i<n;++i){
-        for(int j=0;j<n;++j){
-            before[i][j]=i;
-        }
-    }
-    for(int k=0;k<n;++k){
-        for(int i=0;i<n;++i){
-            for(int j=0;j<n;++j){
-                if(i==j)continue;
-                if(graph[i][j]>graph[i][k]+graph[k][j]){
-                    graph[i][j]=graph[i][k]+graph[k][j];
-                    before[i][j]=before[k][j];
+        string commandline;
+        getline(cin,commandline);
+        vector<string> temp=split(commandline,' ');
+        if(temp[0]=="recommend"){
+            if(temp[1]=="1"){
+                pair<int,int> target=pq_big.top();
+                while(!pq_bigpop.empty() && target==pq_bigpop.top()){
+                    pq_bigpop.pop();
+                    pq_big.pop();
+                    target=pq_big.top();
                 }
-            } 
-        }
-    }
-    for(int i=0;i<n;++i){
-        for(int j=0;j<n;++j){
-            if(graph[i][j]>=INF)cout<<0<<" ";
-            else cout<<graph[i][j]<<" ";
-        }
-        cout<<'\n';
-    }
-    for(int i=0;i<n;++i){
-        for(int j=0;j<n;++j){
-            if(graph[i][j]>=INF)cout<<0<<"\n";
-            else{
-                int k=j;
-                int cnt=0;
-                stack<int> shortest;
-                shortest.push(j);
-                while(k!=i){
-                    k=before[i][k];
-                    shortest.push(k);
-                    cnt++;
+                cout<<target.second<<'\n';
+                pq_big.pop();
+                pq_smallpop.push({-target.first,-target.second});
+            }else{
+                pair<int,int> target=pq_small.top();
+                while(!pq_smallpop.empty() && target==pq_smallpop.top()){
+                    pq_smallpop.pop();
+                    pq_small.pop();
+                    target=pq_small.top();
                 }
-                cout<<cnt+1<<" ";
-                while(!shortest.empty()){
-                    cout<<shortest.top()+1<<" ";
-                    shortest.pop();
-                }
-                cout<<'\n';
+                cout<<-target.second<<'\n';
+                pq_small.pop();
+                pq_bigpop.push({-target.first,-target.second});
             }
+        }else if(temp[0]=="add"){
+            pq_big.push({stoi(temp[2]),stoi(temp[1])});
+            pq_small.push({-stoi(temp[2]),-stoi(temp[1])});
+        }else if(temp[0]=="solved"){
+            pq_bigpop.push({dic[stoi(temp[1])],stoi(temp[1])});
+            pq_smallpop.push({-dic[stoi(temp[1])],-stoi(temp[1])});
         }
     }
     return 0;
 }
 /*
-1. 해당 구역 전부 BFS -> 불가능할 경우 가장 행과열이 작은 미방문 정점에서 다시 시작
-2. 모든 구역 방문 시 종료, 정점을 다시 찾을 때마다 양과 늑대 수 계산 
+1. 제거된 문제가 다시 등장하는 경우를 생각해야 한다.
 */
