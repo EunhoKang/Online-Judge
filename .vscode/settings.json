@@ -9,6 +9,9 @@
         "xstring": "cpp",
         "chrono": "cpp",
         "ios": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "list": "cpp"
     }
 }

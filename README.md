@@ -95,7 +95,7 @@
 | 트리 | https://www.acmicpc.net/problem/4256 |
 | 가장 가까운 공동 조상 | https://www.acmicpc.net/problem/3584 |
 | 트리인가? * | https://www.acmicpc.net/problem/6416 |  
-|  |  |
+| 뉴턴의 사과 * | https://www.acmicpc.net/problem/4933 |
 
 ### 이진검색트리
 | 문제 | 링크 

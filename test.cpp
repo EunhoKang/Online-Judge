@@ -3,55 +3,60 @@
 using namespace std;
 int INF=987654321;
 
-struct Node{
-    int x;
-    int y;
-};
-
-int h,w;
-int grid[1000][1000];
-int dirx[8]={-1,-1,0,1,1,1,0,-1};
-int diry[8]={0,1,1,1,0,-1,-1,-1};
+int N;
 
 int main() {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    cin>>h>>w;
-    for(int i=0;i<h;++i){
-        string s;
-        cin>>s;
-        for(int j=0;j<w;++j){
-            if(s[j]=='.')grid[i][j]==0;
-            else grid[i][j]=s[j]-'0';
-        }
-    }
-    int turn=0;
-    int collasped=1;
-    while(collasped){
-        collasped=0;
-        queue<Node> q;
-        queue<Node> del;
-        q.push({1,1});
-        while(!q.empty()){
-            Node node=q.front();
-            q.pop();
-            int empty=0;
-            for(int i=0;i<8;++i){
-                empty+=(grid[node.x+dirx[i]][node.y+diry[i]]==0? 1:0);
-                if(0<=node.x+dirx[i]&&node.x+dirx[i]<h&&0<=node.y+diry[i]&&node.y+diry[i]<w){
-                    //
+    cin>>N;
+    while(N--){
+        stack<string> st[2];
+        int tree[2][26][2];
+        memset(tree,-1,sizeof(tree));
+        for(int i=0;i<1;++i){
+            while(true){
+                string temp;
+                cin>>temp;
+                if(temp=="end")break;
+                st[i].push(temp);
+            }
+            stack<pair<int,int>> tp;
+            while(!st[i].empty()){
+                string temp=st[i].top();
+                st[i].pop(); 
+                pair<int,int> t=tp.top();
+                if(temp!="nil"){
+                    if(!tp.empty()){
+                        tree[i][t.first][t.second]=temp[0]-'A';
+                    }
+                    t={t.first,t.second+1};
+                    tp.pop();
+                    tp.push(t);
+                    tp.push({temp[0]-'A',0});
+                }else{
+                    t={t.first,t.second+1};
+                    tp.pop();
+                    tp.push(t);
+                }
+                if(t.second>2){
+                    tp.pop();
                 }
             }
-            if(grid[node.x][node.y]>0){
-                //
+        }
+        for(int i=0;i<26;i++){
+            sort(tree[0][i],tree[0][i]+2);
+            sort(tree[1][i],tree[1][i]+2);
+            if(!(tree[0][i][0]==tree[1][i][0]&&tree[0][i][1]==tree[1][i][1])){
+                cout<<false;
+                continue;
             }
         }
-        turn++;
+        cout<<true;
     }
-    cout<<turn-1;
     return 0;
 }
 /*
-1. 기존 lis에서 살짝 변형
+1. 입력 순서를 뒤집으면 전위 순회로 바뀐다.
+2. 전위 순회는 사실상 dfs와 방식이 같으므로 스택을 이용해 부모 노드를 기억하여 푼다.
 */
 
 /*
