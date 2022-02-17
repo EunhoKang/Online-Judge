@@ -51,15 +51,3 @@ int main() {
 1. 동물에게 가장 가까운 사대를 찾아 계산. 사대 선택에 영향을 주는 값은 x뿐이다.
 이분 탐색을 통해 시간을 단축하자. n*n 탐색을 정렬된 상태에서 할수 있다면 고려 가능. 
 */
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-*/
