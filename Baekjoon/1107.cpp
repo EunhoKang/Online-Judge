@@ -44,19 +44,11 @@ int main() {
 }
 
 /*
-15684
-1038
-17406
-*/
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
+1.주어진 숫자로 가장 가까운 숫자를 만들면 된다.
+->우선 100인지 아닌지 체크. 아니라면 주어진 숫자로 만들 수 있는 가장 가까운 수를 만든다.
+2.일반적으로 타겟된 숫자가 N자리 숫자라면, N-1~N+1자리 안에서 수를 만드는게 최소이다.
+-----
+틀리고 나서야 안 것 : 
+100에서부터 무지성으로 누르는게 더 빠를 수도 있다. 
+어차피 모든 숫자를 탐색해도 500000보다 작으므로 해도 된다.
 */
