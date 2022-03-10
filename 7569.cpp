@@ -48,7 +48,6 @@ int main() {
     node current;
     while(!q.empty()){
         current=q.front();
-        //cout<<current.z<<" "<<current.y<<" "<<current.x<<" "<<current.t<<'\n';
         q.pop();
         tomato[current.z][current.y][current.x]=1;
         if(AllSet()){
@@ -74,16 +73,4 @@ int main() {
 /*
 1.x,y,z,여기에 시간까지 포함된 노드 탐색
 2.좌표 방향을 잘 잡아줘야 한다.
-*/
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
 */
