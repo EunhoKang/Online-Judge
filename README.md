@@ -115,9 +115,10 @@
 
 ### 유니온-파인드/최소 스패닝 트리
 | 문제 | 링크 
-|:--------:|:--------:|
-| 섬 연결하기 | https://programmers.co.kr/learn/courses/30/lessons/42861 |  
-|  |  | 
+|:--------:|:--------:| 
+| 집합의 표현 | https://www.acmicpc.net/problem/1717 |
+| 사이클 게임 | https://www.acmicpc.net/problem/20040 | 
+| 섬 연결하기 | https://programmers.co.kr/learn/courses/30/lessons/42861 | 
 
 ### 그래프 탐색
 | 문제 | 링크 

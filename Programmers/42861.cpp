@@ -28,15 +28,15 @@ int solution(int n, vector<vector<int>> costs) {
         pair<int,pair<int,int>> tp=make_pair(costs[i][2],make_pair(costs[i][0],costs[i][1]));
         T.push_back(tp);
     }
-    sort(T.begin(),T.end());
+    sort(T.begin(),T.end());//오름차순의 간선 배열 생성
     int selected=0;
     int idx=0;
     NaiveDisjointSet Set(n);
-    while(selected<n-1){
+    while(selected<n-1){//배열을 순회하면서 연산 진행
         pair<int,pair<int,int>> tp=T[idx];
-        if(Set.merge(tp.second.first,tp.second.second)){
-            answer+=tp.first;
-            selected++;
+        if(Set.merge(tp.second.first,tp.second.second)){//만약 두 집합이 집합에 속해있지 않다면
+            answer+=tp.first;//해당 간선의 가중치를 더하고
+            selected++;//인덱스 증가
         }
         idx++;
     }
@@ -44,7 +44,5 @@ int solution(int n, vector<vector<int>> costs) {
 }
 
 /*
-1.https://eehoeskrap.tistory.com/39
-2.https://chanhuiseok.github.io/posts/algo-33/
-3.https://dheldh77.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9C%A0%EB%8B%88%EC%98%A8%ED%8C%8C%EC%9D%B8%EB%93%9CUnion-Find-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-1
+크루스칼 알고리즘을 사용하는 문제이다.
 */

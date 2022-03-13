@@ -3,22 +3,6 @@
 using namespace std;
 int INF=987654321;
 
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
 vector<int> parent; 
 
 int find (int u) { 
@@ -52,17 +36,6 @@ int main() {
 
 /*
 1.유니온파인드 자료구조를 사용한다.
-*/
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
+2.문제가 악랄해서 n개가 아닌 n+1개의 원소를 쓰며,
+유니온파인드 struct를 쓰면 메모리 초과가 나서 벡터 배열을 밖으로 빼줘야 한다.
 */
