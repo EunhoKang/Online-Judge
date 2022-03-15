@@ -39,33 +39,3 @@ int main() {
 D(n,k) => n번째 자리 결정 시 n-1번째 자리의 수가 k일 경우 앞으로 만들 수 있는 줄어들지 않는 수의 개수
 D(n,k)=D(n+1,k')+~+D(n+1,9) (k'>=k)
 */
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-*/
