@@ -3,41 +3,59 @@
 using namespace std;
 int INF=987654321;
 
-int T;
-int n;
-char S[64];
-ll cache[64][10];
+int n,m;
+int dest[100001];
+int railcnt[100001];
+int ticket[100001];
+int IC[100001];
+int card[100001];
 
-ll dp(int cnt,int k){
-    if(cnt>=n)return 1;
-    ll & res=cache[cnt][k];
-    if(res!=-1)return res;
-    res=0;
-    for(int i=0;i<10;++i){
-        if(k<=i){
-            res+=dp(cnt+1,i);
-        }
-    }
-    return res;
+int segtree[1000][100000];
+
+int settree(int s, int e){
+    //
+    return 0;
+}
+
+void gettree(int s, int e){
+    //
+}
+
+void lazyupdate(){
+    //
 }
 
 int main() {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    
-    cin>>T;
-    while(T--){
-        memset(cache,-1,sizeof(cache));
-        cin>>n;
-        cout<<dp(0,0)<<'\n';
+    cin>>n>>m;
+    for(int i=0;i<m;++i)cin>>dest[i];
+    for(int i=1;i<n;++i)cin>>ticket[i]>>IC[i]>>card[i];
+    for(int i=1;i<m;++i){
+        for(int j=min(dest[i-1],dest[i]);j<max(dest[i-1],dest[i]);++j){
+            railcnt[j]++;
+        }
     }
+    int res=0;
+    for(int i=1;i<n;++i){
+        res+=min(ticket[i]*railcnt[i],IC[i]*railcnt[i]+card[i]);
+    }
+    cout<<res;
     return 0;
 }
 
 /*
-1.어떤 숫자를 만들 때, 
-앞에서의 증가가 보장된다면 어떤 자리에서의 숫자에 대해 이후부터의 갯수는 항상 같다.
-D(n,k) => n번째 자리 결정 시 n-1번째 자리의 수가 k일 경우 앞으로 만들 수 있는 줄어들지 않는 수의 개수
-D(n,k)=D(n+1,k')+~+D(n+1,9) (k'>=k)
+https://www.acmicpc.net/problem/10713
+1.선택 가능한 요소는 IC 카드의 구매 유무뿐이다.
+경로가 설정되는 순간 특정 구간을 몇번 경우하는지는 정해지므로,
+여기에 곱할 변수만 생각해두면 된다.
+2.각각의 철도에서 계산되는 값은 다른 첼도의 계산에 영향을 주지 않는다.
+따라서 티켓과 IC카드 사용시 얻는 해당 철도에 지불하는 총 금액만 비교해 낮은 값들을 전부 더한다.
+------
+1->N->1->N과 같은 식이면 O(NM)으로 시간 초과가 발생한다.
+세그먼트 트리를 이용해 최대 최소값의 임계점이 넘어갈 때마다 값을 업데이트해주는 방식을 사용한다.
+이때 업데이트를 바로 하면 계산 횟수가 늘어날 수 있으므로 lazy propagation을 사용한다.
+https://yabmoons.tistory.com/431
+https://yabmoons.tistory.com/442
 */
 
 
@@ -51,7 +69,6 @@ vector<string> split(string str,char del){
     }
     return res;
 }
-
 struct NaiveDisjointSet { 
     vector<int> parent; 
     NaiveDisjointSet(int n): parent(n) { 
