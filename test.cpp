@@ -56,6 +56,10 @@ https://www.acmicpc.net/problem/10713
 이때 업데이트를 바로 하면 계산 횟수가 늘어날 수 있으므로 lazy propagation을 사용한다.
 https://yabmoons.tistory.com/431
 https://yabmoons.tistory.com/442
+
+https://www.acmicpc.net/problem/4195
+https://www.acmicpc.net/problem/11066
+https://www.acmicpc.net/problem/1987
 */
 
 
