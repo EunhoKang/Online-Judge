@@ -13,6 +13,10 @@
         "deque": "cpp",
         "format": "cpp",
         "list": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "map": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp"
     }
 }
