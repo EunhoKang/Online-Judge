@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<vector<vector<vector<int>>>> tetromino={
+static vector<vector<vector<vector<int>>>> tetromino={ //미리 가능한 모든 경우를 만들어둔다.
     {
         {{0,0},{0,1},{1,0},{1,1}}
     },
@@ -39,23 +39,22 @@ int grid[501][501];
 int main() {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     cin>>h>>w;
-    memset(grid,0,sizeof(grid));
     for(int i=0;i<h;++i)for(int j=0;j<w;++j)cin>>grid[i][j];
     int res=0;
     for(int i=0;i<h;++i){
-        for(int j=0;j<w;++j){
+        for(int j=0;j<w;++j){//맨 첫점 위치
             for(int x=0;x<5;++x){
                 for(int y=0;y<tetromino[x].size();++y){
                     int sum=0;
-                    for(int z=0;z<4;++z){
+                    for(int z=0;z<4;++z){//어떤 블록&상태를 선택할건지 고름
                         if(0<=tetromino[x][y][z][0]+i && 
                         0<=tetromino[x][y][z][1]+j && 
                         h>tetromino[x][y][z][0]+i && 
                         w>tetromino[x][y][z][1]+j){
-                            sum+=grid[tetromino[x][y][z][0]+i][tetromino[x][y][z][1]+j];
+                            sum+=grid[tetromino[x][y][z][0]+i][tetromino[x][y][z][1]+j];//가중치 더함
                         }
                     }
-                    res=max(res,sum);
+                    res=max(res,sum);//그중 최대값을 구한다.
                 }
             }
         }
@@ -64,7 +63,8 @@ int main() {
 }
 
 /*
-1.하나만 고르므로 중복 고려할 필요 없고, 칸을 기준으로 놓을 경우 기준칸에 따라 중복이 발생할 수 있으므로 순서를 고정시켜야 한다.
+1.하나만 고르므로 중복 고려할 필요 없고, 
+칸을 기준으로 놓을 경우 기준칸에 따라 중복이 발생할 수 있으므로 순서를 고정시켜야 한다.
 2.각 모양을 전부 분류하고, 모양에 따라 놓일 수 있는 위치를 따로 저장한다.
 순서대로 모양, 회전, 블록 번호(4개중 어느것인지)를 데이터화한다.
 3.한 조각만 놓으므로 직관적으로 완전캄색을 해도 계산이 적게 걸림을 알 수 있다.
