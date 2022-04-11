@@ -46,35 +46,3 @@ int main() {
 3.각각의 필드가 어느 인덱스에 있는지 알수 없기 때문에, 한 함수가 돌아간 후에 그 함수의 끝나는 지점을 알아야 한다.
 외부 변수로 인덱스를 처리한다.
 */
-
-/*
-*/
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-*/
