@@ -54,33 +54,5 @@ int main() {
 IsCorrect(a,b) = IsCorrent(a+1, b+1) && IsCorrent(a, b+1)
 기저 사례 : 둘다 마지막이면 true 반환
 둘이 동시에 끝나지 못했거나 경우가 이어지지 못하면 false 반환
-*/
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
+나머지 ?이나 일반 문자에 대해서는 재귀를 쓰지 않는다.
 */
