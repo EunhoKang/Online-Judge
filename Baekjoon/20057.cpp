@@ -76,32 +76,3 @@ int main() {
 만약 앞으로도 갈 수 없다면 토네이도 소멸.
 2. 토네이도에 따른 값들은 모두 캐싱해야 한다. 
 */
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-*/
