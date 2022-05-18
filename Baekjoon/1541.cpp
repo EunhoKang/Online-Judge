@@ -42,32 +42,3 @@ int main() {
 1. 뺄셈이 있을 경우 다음 뺄셈이 나오기 전까지 전부 합쳐서 빼면 최소가 된다.
 즉 뺄셈 뒤의 모든 수는 빼버리면 된다.
 */
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-*/
