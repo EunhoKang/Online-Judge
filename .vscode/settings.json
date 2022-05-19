@@ -19,6 +19,7 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "xlocale": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "algorithm": "cpp"
     }
 }
