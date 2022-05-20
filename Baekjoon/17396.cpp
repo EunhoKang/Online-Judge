@@ -44,31 +44,3 @@ int main() {
 /*
 1. 값이 안 나오면 항상 최대 크기를 확인하자.
 */
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-*/
