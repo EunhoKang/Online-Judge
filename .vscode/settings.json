@@ -20,6 +20,7 @@
         "xutility": "cpp",
         "xlocale": "cpp",
         "iosfwd": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "ostream": "cpp"
     }
 }
