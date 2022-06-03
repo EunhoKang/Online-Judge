@@ -21,6 +21,7 @@
         "xlocale": "cpp",
         "iosfwd": "cpp",
         "algorithm": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "xlocinfo": "cpp"
     }
 }

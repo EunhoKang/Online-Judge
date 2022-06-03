@@ -3,32 +3,54 @@
 using namespace std;
 int INF=21000000;
 
-int m,n;
-int rest[5001];
-vector<int> vertex[5001];
-int cache[5001];
+int n, m, v1, v2, X[1002], Y[1002];
 
-int climb(int cur){
-    int & res=cache[cur];
-    if(res!=-1)return res;
-    res=1;
-    for(auto next : vertex[cur])res=max(res,(rest[cur]<rest[next] ? 1+climb(next) : 1));
-    return res;
-}
+double sqr(double d){return d*d;}
 
-int main() {
-    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    memset(cache,-1,sizeof(cache));
-    cin>>n>>m;
-    for(int i=1;i<=n;++i)cin>>rest[i];
-    for(int i=0;i<m;++i){
-        int a,b;
-        cin>>a>>b;
-        vertex[a].push_back(b);
-        vertex[b].push_back(a);
+struct NaiveDisjointSet{
+    int parent[1002];
+    NaiveDisjointSet(int n){
+        for (int i=1; i <= n; i++) parent[i]=i; 
     }
-    for(int i=1;i<=n;++i)cout<<climb(i)<<'\n';
-    return 0;
+    int find(int u){
+        if(parent[u]==u)return u;
+        return parent[u]=find(parent[u]);
+    }
+    bool merge(int u, int v){
+        u=find(u);
+        v=find(v);
+        if(u==v)return false;
+        parent[u]=v;
+        return true;
+    }
+};
+
+int main(){
+    double ans = 0;
+    cin>>n>>m;
+    NaiveDisjointSet uf=NaiveDisjointSet(n);
+    for(int i = 1; i <= n; i++){
+        cin>>X[i]>>Y[i];
+    }
+    for(int i = 0; i < m; i++){
+        cin>>v1>>v2;
+        uf.merge(v1, v2);
+    }
+    priority_queue<pair<double,pair<int,int>>> pq;
+    for(int i = 1; i <= n; i++){
+        for(int j = i + 1; j <= n; j++){
+            double d = sqr(X[i] - X[j]) + sqr(Y[i] - Y[j]);
+            pq.push({-d, {i, j}});
+        }
+    }
+    int cnt = m;
+    while(!pq.empty() && cnt != n - 1){
+        auto top = pq.top(); pq.pop();
+        double tv = top.first;
+        int tx = top.second.first, ty = top.second.second;
+        if(uf.merge(tx, ty))ans += sqrt(-tv), cnt++;
+    }
+    printf("%.2f", ans);
 }
 
 /*
