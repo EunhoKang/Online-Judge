@@ -38,57 +38,5 @@ int main(){
 }
 
 /*
-1.특정 위치에서 이전의 선택은 이후의 결과에 영향x -> DP
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
+1.정렬을 한 후 계산하면 이전 값을 탐색할 필요가 없다. 시간복잡도를 줄일 수 있다.
 */
