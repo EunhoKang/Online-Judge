@@ -34,7 +34,7 @@ int main(){
             if(nCost>dist[nCur])continue;
             if(cost+nCost<=dist[nCur]){
                 prev[nCur]=cur;
-                if(cost+nCost<dist[nCur]){
+                if(cost+nCost<=dist[nCur]){
                     dist[nCur]=cost+nCost;
                     pq.push({-dist[nCur],nCur});
                 }
@@ -57,59 +57,3 @@ int main(){
         st.pop();
     }
 }
-
-/*
-1.아리스토텔레스의 채로 걸러낸다
-2.투 포인터를 이용해 연속합 표현. 위에서부터 시작하면 갯수를 맞출 수 있다.
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-vector<string> split(string str,char del){
-    vector<string> res;
-    string s;
-    stringstream ss(str);
-    while(getline(ss,s,del)){
-        res.push_back(s);
-    }
-    return res;
-}
-struct NaiveDisjointSet { 
-    vector<int> parent; 
-    NaiveDisjointSet(int n): parent(n) { 
-        for (int i=0; i <= n; i++) parent[i]=i; 
-    } 
-    int find (int u) { 
-        if (u == parent[u]) return u;  
-        return parent[u]=find(parent[u]); 
-    } 
-    bool merge (int u, int v){
-        u = find(u); v = find(v); 
-        if (u == v) return false; 
-        parent[u] = v; 
-        return true;
-    } 
-};
-*/
