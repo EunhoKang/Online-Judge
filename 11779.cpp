@@ -31,13 +31,10 @@ int main(){
         for(auto next : edge[cur]){
             int nCur=next.first;
             int nCost=next.second;
-            if(nCost>dist[nCur])continue;
-            if(cost+nCost<=dist[nCur]){
+            if(cost+nCost<dist[nCur]){
                 prev[nCur]=cur;
-                if(cost+nCost<=dist[nCur]){
-                    dist[nCur]=cost+nCost;
-                    pq.push({-dist[nCur],nCur});
-                }
+                dist[nCur]=cost+nCost;
+                pq.push({-dist[nCur],nCur});
             }
         }
     }

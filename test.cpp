@@ -31,13 +31,10 @@ int main(){
         for(auto next : edge[cur]){
             int nCur=next.first;
             int nCost=next.second;
-            if(nCost>dist[nCur])continue;
-            if(cost+nCost<=dist[nCur]){
+            if(cost+nCost<dist[nCur]){
                 prev[nCur]=cur;
-                if(cost+nCost<dist[nCur]){
-                    dist[nCur]=cost+nCost;
-                    pq.push({-dist[nCur],nCur});
-                }
+                dist[nCur]=cost+nCost;
+                pq.push({-dist[nCur],nCur});
             }
         }
     }
@@ -59,8 +56,8 @@ int main(){
 }
 
 /*
-1.아리스토텔레스의 채로 걸러낸다
-2.투 포인터를 이용해 연속합 표현. 위에서부터 시작하면 갯수를 맞출 수 있다.
+1.다익스트라 - 
+경로 저장을 위해서는 
 */
 
 
