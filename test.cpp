@@ -7,6 +7,7 @@ int KN, OX, OY;
 int N, X, Y;
 int cnt = 1;
 int grid[128][128];
+int Z[16];
 
 void printTile() {
     for(int i = 0; i < N; ++i) {
@@ -47,6 +48,7 @@ void LtrominoTiling(int x, int y, int outX, int outY, int gridSize) {
 int main() {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     memset( grid, -1, sizeof(grid) );
+    cout << sizeof(Z);
     cin >> KN >> OX >> OY;
     N = pow( 2, KN ); X = N - OY; Y = OX - 1;
     LtrominoTiling( 0, 0, X, Y, N);
