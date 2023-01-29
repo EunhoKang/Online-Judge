@@ -44,12 +44,10 @@ polygon GrahamsScan() {
 	vector2 first, second;
 
 	for (int i = 2; i < n; i++) {
-		cout << i << " " << points[i].x << " " << points[i].y << '\n';
 		while (s.size() >= 2) {
 			second = s.top();
 			s.pop();
 			first = s.top();
-			cout << "ccw : " << first.x << " " << first.y <<" " << second.x <<" " << second.y << '\n';
 			if (ccw(first, second, points[i]) > 0) {
 				s.push(second);
 				break;
