@@ -1,55 +1,60 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+const int INF = 987654321;
 
-vector<int> getPartialMatch(const string& N)
+int N;
+int W[300];
+
+int V;
+vector<pair<int, int>> adj[10005];
+
+int prim(vector<pair<int, int>>& selected)
 {
-	int m = (int)N.size(), matched = 0;
-    vector<int> pi(m, 0);
-    for(int i = 1; i< m ; i++){
-        while(matched > 0 && N[i] != N[matched])
-            matched = pi[matched - 1];
-        if(N[i] == N[matched])
-            pi[i] = ++matched;
+    selected.clear();
+    vector<bool> added(V, false);
+    vector<int> minWeight(V, INF);
+    vector<int> parent(V, -1);
+    int ret = 0;
+    minWeight[0] = parent[0] = 0;
+    for (int iter = 0; iter < V; ++iter)
+    {
+        int u = -1;
+        for (int v = 0; v < V; ++v)
+            if (!added[v] && (u == -1 || minWeight[u] > minWeight[v]))
+                u = v;
+        if (parent[u] != u)
+            selected.push_back(make_pair(parent[u], u));
+        ret += minWeight[u];
+        added[u] = true;
+        for (int i = 0; i < adj[u].size(); ++i)
+        {
+            int v = adj[u][i].first, weight = adj[u][i].second;
+            if (!added[v] && minWeight[v] > weight)
+            {
+                parent[v] = u;
+                minWeight[v] = weight;
+            }
+        }
     }
-    return pi;
-}
-
-vector<int> kmpSearch(const string& H, const string& N)
-{
-	int n = H.size(), m = N.size();
-	vector<int> ret;
-	vector<int> pi = getPartialMatch(N);
-	int matched = 0;
-	for (int i = 0; i < n; ++i)
-	{
-		while (matched > 0 && H[i] != N[matched]) matched = pi[matched - 1];
-		if (H[i] == N[matched])
-		{
-			++matched;
-			if (matched == m)
-			{
-				ret.push_back(i - m + 1);
-				matched = pi[matched - 1];
-			}
-		}
-	}
-	return ret;
+    return ret;
 }
 
 int main()
 {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    string H, N;
-    getline(cin, H);
-    getline(cin, N);
-    vector<int> kmp = kmpSearch(H, N);
-    cout << kmp.size() << '\n';
-    for (int i = 0; i < kmp.size(); ++i)
-        cout << kmp[i] + 1 << '\n';
+    cin >> N;
+    for(int i = 0; i < N; ++i)
+        cin >> W[i];
+    for(int i = 0; i < N; ++i)
+        for(int j = 0; j < N; ++j)
+            cin >> graph[i][j];
     return 0;
 }
 
 /*
-kmp 활용
+1.무향 밀집 그래프이다.
+2.N번 논에 우물을 판다 -> N번 노드에 가중치 Wi인 간선으로 연결된 우물 노드를 연결한다
+우물과 연결된 간선은 반드시 하나는 있어야 하므로, 하나는 일단 무조건 간선에 추가한다.
+이후 나머지 간선들로 정점을 최소한의 비용으로 연결한다. -> 최소 스패닝 트리
 */
