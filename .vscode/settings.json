@@ -23,6 +23,7 @@
         "algorithm": "cpp",
         "ostream": "cpp",
         "xlocinfo": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "regex": "cpp"
     }
 }
