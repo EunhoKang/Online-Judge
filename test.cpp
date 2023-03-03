@@ -3,93 +3,38 @@
 using namespace std;
 const int INF = 987654321;
 
-const int dx[4] = {1, 0, -1, 0};
-const int dy[4] = {0, 1, 0, -1};
+int N, K;
+int matchTable[10][10];
+int bigData[3][20];
 
-int n, m;
-int grid[20][20];
-int visited[20][20];
-int maxProfit = 0;
-
-bool onGrid(int x, int y)
+int isWin(int match, int win, int canPlay, int A, int B)
 {
-    return 0 <= x && x < m && 0 <= y && y < n;
-}
-
-void getProfit()
-{
-    int visited[20][20] = {0, };
-    int profit = 0;
-    for(int i = 0; i < n; ++i)
-        for(int j = 0; j < m; ++j)
-            if(grid[i][j] == 2 && visited[i][j] == 0)
-            {
-                int cnt = 1;
-                queue<vector<int>> q;
-                q.push({i, j});
-                visited[i][j] = 1;
-                bool flag = true;
-                while(!q.empty())
-                {
-                    vector<int> node = q.front();
-                    q.pop();
-                    for(int k = 0; k < 4; ++k)
-                    {
-                        int nextX = node[0] + dx[k];
-                        int nextY = node[1] + dy[k];
-                        if(onGrid(nextX, nextY) && visited[nextX][nextY] == 0)
-                        {
-                            if(grid[nextX][nextY] == 0)
-                                flag = false;
-                            else if(grid[nextX][nextY] == 2)
-                            {
-                                visited[nextX][nextY] = 1;
-                                q.push({nextX, nextY});
-                                cnt++;
-                            }
-                        }
-                    }
-                }
-                if(flag)
-                    profit = max(profit, cnt);
-            }
-    maxProfit = max(maxProfit, profit);
-}
-
-void getGameState()
-{
-    for(int i = 0; i < n; ++i)
-        for(int j = 0; j < m; ++j)
-            if(grid[i][j] == 0)
-            {
-                grid[i][j] = 1;
-                for(int a = i; a < n; ++a)
-                    for(int b = j + 1; b < m; ++b)
-                        if(grid[a][b] == 0)
-                        {
-                            grid[a][b] = 1;
-                            getProfit();
-                            grid[a][b] = 0;
-                        }
-                grid[i][j] = 0;
-            }
+    if(win >= K)
+        return 1;
+    if(match == 20)
+        return 0;
+    if(!canPlay)
+        return 
+    for(int i = 1; i <= N; ++i)
+    {
+        if(matchTable[bigData[]])
+    }
 }
 
 int main()
 {
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    cin >> n >> m;
-    for(int i = 0; i < n; ++i)
-        for(int j = 0; j < m; ++j)
-            cin >> grid[i][j];
-    getGameState();
-    cout << maxProfit;
+    cin >> N >> K;
+    for(int i = 1; i <= N; ++i)
+        for(int j = 1; j <= N; ++j)
+            cin >> matchTable[i][j];
+    for(int i = 0; i < 20; ++i)
+        cin >> bigData[1][i];
+    for(int i = 0; i < N; ++i)
+        cin >> bigData[2][i];
     return 0;
 }
 
 /*
-1.무향 밀집 그래프이다.
-2.N번 논에 우물을 판다 -> N번 노드에 가중치 Wi인 간선으로 연결된 우물 노드를 연결한다
-우물과 연결된 간선은 반드시 하나는 있어야 하므로, 하나는 일단 무조건 간선에 추가한다.
-이후 나머지 간선들로 정점을 최소한의 비용으로 연결한다. -> 최소 스패닝 트리
+1.그리디 활용 문제. 스케줄링이므로 빨리 끝내야 하는 것부터 세면 된다.
 */
