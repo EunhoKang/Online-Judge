@@ -1,91 +1,111 @@
 #include <bits/stdc++.h>
-#define ll long long
 using namespace std;
 const int INF = 987654321;
 
-int N;
-bool alphabet[26] = {false, };
+int grid[3][3];
+int thisturn = 0;
 
-bool isUpper(char A)
+int otherPlayer(int turn)
 {
-    return 0 <= A - 'A' && A - 'A' < 26; 
+    return turn == 1 ? 2 : 1;
 }
 
-int main()
+int isEnd(int board[3][3])
 {
-    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    cin >> N;
-    cin.ignore();
-    for (int i = 0; i < N; ++i)
+    for(int i = 0; i < 3; ++i)
     {
-        string option;
-        getline(cin, option);
-        bool isFirstChecked = false;
-        bool isOtherChecked = false;
-        if ((isUpper(option[0]) && !alphabet[option[0] - 'A']))
+        if(board[0][i] == board[1][i] && board[0][i] == board[2][i] && board[0][i] != 0)
         {
-            alphabet[option[0] - 'A'] = true;
-            cout << "[" << option[0] << "]" << option.substr(1) << '\n';
-            continue;
+            return board[0][i];
         }
-        else if(!isUpper(option[0]) && !alphabet[option[0] - 'a'])
+        if(board[i][0] == board[i][1] && board[i][0] == board[i][2] && board[i][0] != 0)
         {
-            alphabet[option[0] - 'a'] = true;
-            cout << "[" << option[0] << "]" << option.substr(1) << '\n';
-            continue;
+            return board[i][0];
         }
-        for(int j = 1; j < option.length(); j++)
+    }
+    if(board[0][0] == board[1][1] && board[0][0] == board[2][2] && board[0][0] != 0)
+    {
+        return board[0][0];
+    }
+    if(board[2][0] == board[1][1] && board[2][0] == board[0][2] && board[0][2] != 0)
+    {
+        return board[2][0];
+    }
+    for(int i = 0; i < 3; ++i)
+    {
+        for(int j = 0; j < 3; ++j)
         {
-            if (option[j] != ' ' && option[j - 1] == ' ')
-            { 
-                if (isUpper(option[j]) && !alphabet[option[j] - 'A'])
-                {
-                    alphabet[option[j] - 'A'] = true;
-                    cout << option.substr(0, j) << "[" << option[j] << "]" << option.substr(j + 1) << '\n';
-                    isFirstChecked = true;
-                    break;
-                }
-                else if(!isUpper(option[j]) && !alphabet[option[j] - 'a'])
-                {
-                    alphabet[option[j] - 'a'] = true;
-                    cout << option.substr(0, j) << "[" << option[j] << "]" << option.substr(j + 1) << '\n';
-                    isFirstChecked = true;
-                    break;
-                }
-            }
-        }
-        if(isFirstChecked)
-        {
-            continue;
-        }
-        for(int j = 1; j < option.length(); j++)
-        {
-            if(option[j] != ' ')
+            if(board[i][j] == 0)
             {
-                if(isUpper(option[j]) && !alphabet[option[j] - 'A'])
-                {
-                    alphabet[option[j] - 'A'] = true;
-                    cout << option.substr(0, j) << "[" << option[j] << "]" << option.substr(j + 1) << '\n';
-                    isOtherChecked = true;
-                    break;
-                }
-                else if(!isUpper(option[j]) && !alphabet[option[j] - 'a'])
-                {
-                    alphabet[option[j] - 'a'] = true;
-                    cout << option.substr(0, j) << "[" << option[j] << "]" << option.substr(j + 1) << '\n';
-                    isOtherChecked = true;
-                    break;
-                }
+                return -1;
             }
-        }
-        if(!isOtherChecked)
-        {
-            cout << option << '\n';
         }
     }
     return 0;
 }
 
+int backTrack(int board[3][3], int turn)
+{
+    int result = isEnd(board);
+    if(result == -1)
+    {
+        int bestRes = 2;
+        for(int i = 0; i < 3; ++i)
+        {
+            for(int j = 0; j < 3; ++j)
+            {
+                if(board[i][j] == 0)
+                {
+                    board[i][j] = turn;
+                    bestRes = min(bestRes, backTrack(board, otherPlayer(turn)));
+                    board[i][j] = 0;
+                }
+            }
+        }
+        return bestRes == 1 ? -1 : (bestRes == 0 ? 0 : 1);
+    }
+    return result == 0 ? 0 : (result == turn ? 1 : -1);
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    for(int i = 0; i < 3; ++i)
+    {
+        for(int j = 0; j < 3; ++j)
+        {
+            cin >> grid[i][j];
+            if(grid[i][j] == 1)
+            {
+                thisturn--;
+            }
+            else if(grid[i][j] == 2)
+            {
+                thisturn++;
+            }
+        }
+    }
+    if(thisturn == -1)
+    {
+        thisturn = 2;
+    }
+    int answer = backTrack(grid, thisturn);
+    if(answer == 0)
+    {
+        cout << "D";
+    }
+    else if(answer == -1)
+    {
+        cout << "L";
+    }
+    else
+    {
+        cout << "W";
+    }
+    return 0;
+}
+
 /*
-모든 경우의 수를 만들어봄으로써 해결한다.
+반례가 생각했던 것보다 너무 많았다.
+좀 더 일반적인 경우에 대해 생각해보는 연습이 필요하다.
 */

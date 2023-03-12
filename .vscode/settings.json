@@ -25,6 +25,9 @@
         "xlocinfo": "cpp",
         "functional": "cpp",
         "regex": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "unordered_map": "cpp",
+        "bitset": "cpp",
+        "iterator": "cpp"
     }
 }
