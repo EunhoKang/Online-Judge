@@ -28,6 +28,7 @@
         "random": "cpp",
         "unordered_map": "cpp",
         "bitset": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "tuple": "cpp"
     }
 }
