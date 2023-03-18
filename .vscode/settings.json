@@ -29,6 +29,7 @@
         "unordered_map": "cpp",
         "bitset": "cpp",
         "iterator": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "valarray": "cpp"
     }
 }
