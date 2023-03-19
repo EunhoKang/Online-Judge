@@ -52,7 +52,3 @@ int main()
     cout << answer;
     return 0;
 }
-
-/*
-자료형 범위 늘릴 때 차근차근 늘려라
-*/
