@@ -30,6 +30,7 @@
         "bitset": "cpp",
         "iterator": "cpp",
         "tuple": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "ratio": "cpp"
     }
 }

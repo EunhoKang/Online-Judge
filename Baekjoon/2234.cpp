@@ -81,8 +81,3 @@ int main()
     cout << maxAdjustive;
     return 0;
 }
-
-/*
-탐색 중단 조건을 잘 둘것.
-
-*/
